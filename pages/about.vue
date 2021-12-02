@@ -1,18 +1,75 @@
 <template>
-  <div class="container-fluid img">
+  <div class="container-fluid">
     <Navigation />
- 
-    <div class="container mx-auto text-center" >
-      <h1 class="title">About</h1>
 
-      <div class="typewriter">
-        <h3>Student, Developer, Cat Lover</h3>
+    <div class="row" style="background-color: #f2f2f2">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="container row mx-auto" style="margin-top: 10px">
+          <div class="col">
+            <h1 class="title">Personal</h1>
+
+            <p class="subtitle">
+              I'm a software engineering student based in Bukit Beruang, Melaka.
+            </p>
+
+            <p class="content">
+              I enjoy turning complex problems into simple, beautiful and
+              intuitive designs. When I'm not pushing pixels, you'll find me
+              cooking, gardening or working out in the park.
+            </p>
+          </div>
+        </div>
       </div>
-      
+      <div class="d-none d-md-block col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
+        <img src="../assets/icon/win.png"  width="500" height="500" alt="win.png" />
+      </div>
+    </div>
+    <div class="row" style="background-color: #e6e6e6">
+      <div class="d-none d-md-block col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
+        <img src="../assets/icon/selfie.png"  width="500" height="500" alt="selfie.png" />
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="container row mx-auto" style="margin-top: 10px">
+          <div class="col" style="text-align:right;">
+            <h1 class="title">Contact</h1>
+
+            <p class="subtitle">You can reach me via...</p>
+
+            <p class="content">
+              <img src="../assets/icon/email.png" alt="" /> akmalsab14@gmail.com
+              <br />
+
+              <img src="../assets/icon/phone-call.png" alt="" /> 011-2062-4714
+              <br />
+
+              <img src="../assets/icon/linkedin.png" alt="" />
+              <a
+                style="font-size: 18px"
+                href="https://www.linkedin.com/in/muhammad-akmal-mohd-sabri-6b9398145/"
+                target="blank"
+                >Click me</a
+              >
+              <br />
+
+              <img src="../assets/icon/github.png" alt="" />
+              <a
+                style="font-size: 18px"
+                href="https://github.com/AkmalSab"
+                target="blank"
+                >Click me</a
+              >
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <Footer />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </div>
 </template>
 <script>
@@ -20,46 +77,25 @@ export default {};
 </script>
 
 <style scoped>
-.img{
-  background-image: url("../assets/img/bg.jpg");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
+.profile-image {
+  border-radius: 50%;
+  width: auto;
+  height: auto;
 }
 
-.title{
-  margin-top: 100px;
+.title {
+  text-align: left;
   font-size: 100px;
   font-weight: bold;
 }
 
-.subtitle{
-  margin-top: 10px;
-  font-style: italic;
+.subtitle {
+  text-align: left;
+  font-size: 36px;
 }
 
-.typewriter h3 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+.content {
+  text-align: justify;
+  font-size: 18px;
 }
 </style>
