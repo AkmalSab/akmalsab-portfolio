@@ -52,8 +52,8 @@
           <NuxtLink class="nav-link" :to="{ name: 'work' }">Work</NuxtLink>
         </li>
         <li class="nav-item">
-          <NuxtLink class="nav-link" :to="{ name: 'contact' }"
-            >Contact</NuxtLink
+          <NuxtLink class="nav-link" :to="{ name: 'personal' }"
+            >Personal</NuxtLink
           >
         </li>
       </ul>
