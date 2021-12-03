@@ -1,6 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">My Portfolio</a>
+  <nav class="navbar navbar-expand-lg" style="background-color: #f2f2f2;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
     <!-- toggler button -->
     <button
       class="navbar-toggler"
@@ -33,43 +34,37 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <NuxtLink
-            class="nav-link active"
+            class="nav-link"
             aria-current="page"
             :to="{ name: 'index' }"
             >Home</NuxtLink
           >
         </li>
         <li class="nav-item">
-          <NuxtLink
-            class="nav-link"
-            :to="{ name: 'about' }"
-            >About</NuxtLink
-          >
+          <NuxtLink class="nav-link" :to="{ name: 'about' }">About</NuxtLink>
         </li>
         <li class="nav-item">
-          <NuxtLink
-            class="nav-link"
-            :to="{ name: 'academic' }"
+          <NuxtLink class="nav-link" :to="{ name: 'academic' }"
             >Academic</NuxtLink
           >
         </li>
         <li class="nav-item">
-          <NuxtLink
-            class="nav-link"
-            :to="{ name: 'work' }"
-            >Work</NuxtLink
-          >
+          <NuxtLink class="nav-link" :to="{ name: 'work' }">Work</NuxtLink>
         </li>
         <li class="nav-item">
-          <NuxtLink
-            class="nav-link"
-            :to="{ name: 'contact' }"
+          <NuxtLink class="nav-link" :to="{ name: 'contact' }"
             >Contact</NuxtLink
           >
         </li>
       </ul>
     </div>
     <!-- navbar -->
+    </div>    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </nav>
 </template>
 
@@ -88,21 +83,24 @@ a.navbar-brand {
   font-weight: bolder;
 }
 
-a.nav-link.active {
-  font-size: 24px;
-  font-weight: bold;
-  color: #404040;
-}
-
 a.nav-link:hover {
   font-size: 24px;
   color: white;
-  background-color: black;
   border-radius: 5px;
+  background-color: black;
 }
 
 a.nav-link:active {
   font-size: 24px;
   color: grey;
+}
+
+a.nuxt-link-exact-active {
+  font-size: 24px;
+  font-weight: bold;
+  /* color: #404040; */
+  color: white;
+  border-radius: 5px;
+  background-color: black;
 }
 </style>

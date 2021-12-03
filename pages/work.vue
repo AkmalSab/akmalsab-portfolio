@@ -1,60 +1,58 @@
 <template>
-  <div class="container-fluid img">
+  <div>
     <Navigation />
- 
-    <div class="container mx-auto text-center" >
-      <h1 class="title">Work</h1>
 
-      <div class="typewriter">
-        <h3>Student, Developer, Cat Lover</h3>
+    <div class="container" style="margin-top: 30px">
+      <div class="row">
+        <div
+          class="col-4"
+          v-for="repo in repos"
+          :key="repo.id"
+          style="margin-bottom: 30px"
+        >
+          <!-- start card -->
+          <div class="card text-center">
+            <div class="card-header">{{ repo.full_name }}</div>
+            <div class="card-body">
+              <h5 class="card-title">{{ repo.name }}</h5>
+              <p class="card-text">
+                {{ repo.description }}
+              </p>
+              <a href="" class="btn btn-primary">Visit</a>
+            </div>
+            <div class="card-footer text-muted">{{ repo.updated_at }}</div>
+          </div>
+          <!-- end card -->
+        </div>
       </div>
-      
     </div>
-
-    <Footer />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      repos: [],
+    };
+  },
+  created() {
+    this.fetchSomething();
+  },
+  methods: {
+    async fetchSomething() {
+      const ip = await this.$axios.$get(
+        "https://api.github.com/users/AkmalSab/repos"
+      );
+      this.repos = ip;
+    },
+  },
+};
 </script>
 
 <style scoped>
-.img{
-  background-image: url("../assets/img/bg.jpg");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-}
-
-.title{
+.title {
   margin-top: 100px;
   font-size: 100px;
   font-weight: bold;
-}
-
-.typewriter h3 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
 }
 </style>

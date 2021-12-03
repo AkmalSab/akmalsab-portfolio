@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div>
     <Navigation />
 
     <div class="row" style="background-color: #f2f2f2">
@@ -20,17 +20,39 @@
           </div>
         </div>
       </div>
-      <div class="d-none d-md-block col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
-        <img src="../assets/icon/win.png"  width="500" height="500" alt="win.png" />
+      <div
+        class="
+          d-none d-md-block
+          col-sm-12 col-md-6 col-lg-6 col-xl-6
+          text-center
+        "
+      >
+        <img
+          src="../assets/icon/win.png"
+          width="500"
+          height="500"
+          alt="win.png"
+        />
       </div>
     </div>
     <div class="row" style="background-color: #e6e6e6">
-      <div class="d-none d-md-block col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
-        <img src="../assets/icon/selfie.png"  width="500" height="500" alt="selfie.png" />
+      <div
+        class="
+          d-none d-md-block
+          col-sm-12 col-md-6 col-lg-6 col-xl-6
+          text-center
+        "
+      >
+        <img
+          src="../assets/icon/selfie.png"
+          width="500"
+          height="500"
+          alt="selfie.png"
+        />
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <div class="container row mx-auto" style="margin-top: 10px">
-          <div class="col" style="text-align:right;">
+          <div class="col" style="text-align: right">
             <h1 class="title">Contact</h1>
 
             <p class="subtitle">You can reach me via...</p>
@@ -64,12 +86,6 @@
         </div>
       </div>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
   </div>
 </template>
 <script>
