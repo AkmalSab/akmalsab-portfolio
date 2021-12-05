@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg" style="background-color: #f2f2f2;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">My Portfolio</a>
+      <a class="navbar-brand d-block d-lg-none d-xl-none	" href="#">AkmalSab</a>
     <!-- toggler button -->
     <button
       class="navbar-toggler"
@@ -31,13 +31,18 @@
 
     <!-- navbar -->
     <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <NuxtLink
             class="nav-link"
             aria-current="page"
             :to="{ name: 'index' }"
             >Home</NuxtLink
+          >
+        </li>
+        <li class="nav-item">
+          <NuxtLink class="nav-link" :to="{ name: 'skill' }"
+            >Skill</NuxtLink
           >
         </li>
         <li class="nav-item">
@@ -49,11 +54,11 @@
           >
         </li>
         <li class="nav-item">
-          <NuxtLink class="nav-link" :to="{ name: 'work' }">Work</NuxtLink>
+          <NuxtLink class="nav-link" :to="{ name: 'project' }">Project</NuxtLink>
         </li>
         <li class="nav-item">
-          <NuxtLink class="nav-link" :to="{ name: 'personal' }"
-            >Personal</NuxtLink
+          <NuxtLink class="nav-link" :to="{ name: 'experience' }"
+            >Experience</NuxtLink
           >
         </li>
       </ul>

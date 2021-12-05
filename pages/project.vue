@@ -8,7 +8,13 @@
       <h3 class="subtitle">
         Check out some of my latest web development project.
       </h3>
-      <div class="row">
+    </div>
+
+    <div
+      class="container mx-auto"
+      style="padding-top: 20px; background-color: #e6e6e6; border-radius: 10px"
+    >
+      <div class="row mx-auto">
         <div
           class="col-sm-12 col-md-6 col-lg-4 col-xl-4"
           v-for="repo in repos"
@@ -27,7 +33,11 @@
                 {{ repo.description }}
               </p>
               <p class="card-text" v-else>No Description</p>
-              <a href="" style="margin-top: auto" class="btn btn-primary w-100"
+              <a
+                :href="repo.html_url"
+                target="_blank"
+                style="margin-top: auto"
+                class="btn btn-primary"
                 >Visit</a
               >
             </div>
@@ -82,5 +92,13 @@ export default {
 .subtitle {
   text-align: center;
   font-size: 36px;
+}
+@media screen and (max-width: 414px) {
+  .title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 80px;
+    font-weight: bold;
+  }
 }
 </style>
