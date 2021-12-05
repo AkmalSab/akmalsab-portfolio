@@ -1,16 +1,9 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/akmalsab.github.io/'
-  }
-} : {}
-
-
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     target: 'static',
     router: {
-      base: '/<akmalsab-portfolio>/'
+      base: '/akmalsab-portfolio/'
     },
     title: 'akmalsab-portfolio',
     htmlAttrs: {
@@ -49,7 +42,6 @@ export default {
     '@nuxtjs/axios',
   ],
 
-  ...routerBase,
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
