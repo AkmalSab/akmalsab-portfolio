@@ -3,7 +3,7 @@ export default {
   head: {
     target: 'static',
     router: {
-      base: '/akmalsab-portfolio/'
+      base: '/<akmalsab-portfolio>/'
     },
     title: 'akmalsab-portfolio',
     htmlAttrs: {
