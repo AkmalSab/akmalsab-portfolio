@@ -1,10 +1,11 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'static',
+  router: {
+    base: '/akmalsab-portfolio/'
+  },
   head: {
-    target: 'static',
-    router: {
-      base: '/akmalsab-portfolio/'
-    },
+    
     title: 'akmalsab-portfolio',
     htmlAttrs: {
       lang: 'en'
