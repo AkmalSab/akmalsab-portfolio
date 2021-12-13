@@ -7,8 +7,8 @@
       <h3 class="subtitle">List of my past experiences.</h3>
 
       <div class="button">
-        <a class="btn btn-primary" href="/AkmalSab_Resumes.pdf">My Resume</a>
-        <a class="btn btn-primary" href="/AkmalSab_Cvs.pdf">My CVs</a>
+        <a class="btn btn-primary" href="AkmalSab_Resumes.pdf">My Resume</a>
+        <a class="btn btn-primary" href="AkmalSab_Cvs.pdf">My CVs</a>
       </div>
     </div>
     <div class="container mx-auto row">
