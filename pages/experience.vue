@@ -5,6 +5,11 @@
       <h1 class="title">Experience.</h1>
 
       <h3 class="subtitle">List of my past experiences.</h3>
+
+      <div class="button">
+        <a class="btn btn-primary" href="/AkmalSab_Resumes.pdf">My Resume</a>
+        <a class="btn btn-primary" href="/AkmalSab_Cvs.pdf">My CVs</a>
+      </div>
     </div>
     <div class="container mx-auto row">
       <div
@@ -110,6 +115,12 @@ export default {};
 .content {
   text-align: justify;
   font-size: 18px;
+}
+
+.button{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 414px) {
